@@ -7,13 +7,13 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 
 <div class="newsletter">
     <div class="newsletter_content">
-        <div class="newsletter_image" style="background-image:url(<?=SITE_TEMPLATE_PATH?>/images/back23.jpg)"></div>
+        <div class="newsletter_image" style="background-image:url(<?=SITE_TEMPLATE_PATH?>/images/milad-fakurian-VbC-EiOTDqA-unsplash.jpg)"></div>
         <div class="container">
             <div class="row">
                 <div class="col">
                     <div class="section_title_container text-center">
-                        <div class="section_subtitle">только лучшее</div>
-                        <div class="section_title">подпишись и получи 20% скидку</div>
+                        <div class="section_subtitle">только лучшее предложение</div>
+                        <div class="section_title">подпишись и получи специальное предложение</div>
                     </div>
                 </div>
             </div>
@@ -38,13 +38,13 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
     <div class="container">
         <div class="row">
             <div class="col text-center">
-                <div class="footer_logo"><a href="#">центр гранита</a></div>
+                <div class="footer_logo"><a href="/">центр гранита</a></div>
                 <nav class="footer_nav">
                     <ul>
-                        <li><a href="#">О компании</a></li>
-                        <li><a href="#">каталог</a></li>
-                        <li><a href="#">галерея</a></li>
-                        <li><a href="#">контакты</a></li>
+                        <li><a href="/about/">О компании</a></li>
+                        <li><a href="/catalog/">каталог</a></li>
+                        <li><a href="/gallery/">галерея</a></li>
+                        <li><a href="/contacts/">контакты</a></li>
                     </ul>
                 </nav>
                 <div class="footer_social">
@@ -56,9 +56,9 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
                         <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
-                <div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                <div class="copyright">
                     Разработанно &copy;<script>document.write(new Date().getFullYear());</script> Пирогов Дмитрий<i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://t.me/PirogovDS" target="_blank">Pirogov</a>
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+                </div>
             </div>
         </div>
     </div>

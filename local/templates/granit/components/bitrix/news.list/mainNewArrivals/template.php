@@ -20,10 +20,10 @@ $caunt = 0;
                 <div class="col">
                     <div class="section_title_container text-center">
                         <div class="section_subtitle">
-                            только лучшее
+                            <?=GetMessage("TITLE")?>
                         </div>
                         <div class="section_title">
-                            Новые поступления
+                            <?=GetMessage("SALE")?>
                         </div>
                     </div>
                 </div>

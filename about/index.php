@@ -8,7 +8,7 @@ use Bitrix\Main\Page\Asset;
     <div class="extra clearfix">
         <div class="extra_promo extra_promo_1">
 
-            <div class="extra_promo_image" style="background-image:url(/upload/iblock/6d5/pdc2u13mkjb2ncxu0pu8nyfj91f8h9pv.jpg)"></div>
+            <div class="extra_promo_image" style="background-image:url(<?=SITE_TEMPLATE_PATH?>/images/about/banner.jpg)"></div>
             <div class="extra_1_content d-flex flex-column align-items-center justify-content-center text-center">
                 <div class="extra_1_price">О нас</div>
                 <div class="extra_1_title">Познакомимся ближе</div>

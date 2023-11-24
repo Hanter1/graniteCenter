@@ -10,7 +10,7 @@ $APPLICATION->SetTitle("Контакты");
 	"bitrix:map.yandex.view", 
 	".default", 
 	array(
-		"API_KEY" => "",
+		"API_KEY" => "bf643bc5-7c0d-4498-bb0b-143ba141428f",
 		"CONTROLS" => array(
 		),
 		"INIT_MAP_TYPE" => "MAP",
@@ -42,9 +42,12 @@ $APPLICATION->SetTitle("Контакты");
 					<div class="review_form_content">
 						<form action="#" id="review_form" class="review_form">
 							<div class="d-flex flex-md-row flex-column align-items-start justify-content-between">
- <input type="text" class="review_form_input" placeholder="Name" required="required"> <input type="email" class="review_form_input" placeholder="E-mail" required="required"> <input type="text" class="review_form_input" placeholder="Subject">
+                                <input type="text" class="review_form_input" placeholder="Имя" required="required">
+                                <input type="email" class="review_form_input" placeholder="E-mail" required="required">
+                                <input type="text" class="review_form_input" placeholder="Тема">
 							</div>
- <textarea class="review_form_text" name="review_form_text" placeholder="Message"></textarea> <button type="submit" class="review_form_button">send message</button>
+                            <textarea class="review_form_text" name="review_form_text" placeholder="Сообщение"></textarea>
+                            <button type="submit" class="review_form_button">Отправить</button>
 						</form>
 					</div>
 				</div>
@@ -60,32 +63,32 @@ $APPLICATION->SetTitle("Контакты");
 			<div class="col-lg-5">
 				<div class="contact_info">
 					<div class="contact_title">
-						 contact info
+						 Наши контакты
 					</div>
 					<div class="contact_info_content">
 						<ul>
 							<li>
-							<div class="contact_info_icon">
- <img src="/local/templates/granit/images/contact_info_1.png" alt="">
-							</div>
-							<div class="contact_info_text">
-								 Rosia Road, no67, Gibraltar UK
-							</div>
- </li>
+                                <div class="contact_info_icon">
+                                    <img src="/local/templates/granit/images/contact_info_1.png" alt="">
+                                </div>
+                                <div class="contact_info_text">
+                                    г. Гродно, ул. Брикеля, 8, пом. 3
+                                </div>
+                            </li>
 							<li>
-							<div class="contact_info_icon">
- <img src="/local/templates/granit/images/contact_info_2.png" alt="">
-							</div>
-							<div class="contact_info_text">
- <a href="mailto:office@yourbusiness.com">office@yourbusiness.com</a>
-							</div>
- </li>
+                                <div class="contact_info_icon">
+                                    <img src="/local/templates/granit/images/contact_info_2.png" alt="">
+                                </div>
+                                <div class="contact_info_text">
+                                    <a href="mailto:office@yourbusiness.com">info@mail.ru</a>
+                                </div>
+                            </li>
 							<li>
 							<div class="contact_info_icon">
  <img src="/local/templates/granit/images/contact_info_3.png" alt="">
 							</div>
 							<div class="contact_info_text">
-								 +45 7703 29293 34
+                                +375 44 111 11 11
 							</div>
  </li>
 						</ul>
@@ -105,49 +108,39 @@ $APPLICATION->SetTitle("Контакты");
 			<div class="col-lg-7">
 				<div class="faq">
 					<div class="contact_title">
-						 faq
+						 Вопрос-ответ
 					</div>
-					<div class="faq_content">
-						 <!-- Accordions -->
-						<div class="accordions">
-							<div class="accordion_container">
-								<div class="accordion d-flex flex-row align-items-center">
-									<div>
-										 Lorem ipsum dolor sit amet, consectetur?
-									</div>
-								</div>
-								<div class="accordion_panel">
-									<p>
-										 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis quam ipsum. Pellentesque consequat tellus non tortor tempus, id egestas elit iaculis. Proin eu dui porta, pretium metus vitae, pharetra odio. Sed ac mi commodo, pellentesque erat eget, accumsan justo.
-									</p>
-								</div>
-							</div>
-							<div class="accordion_container">
-								<div class="accordion d-flex flex-row align-items-center">
-									<div>
-										 Ipsum dolor sit amet, consectetur?
-									</div>
-								</div>
-								<div class="accordion_panel">
-									<p>
-										 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis quam ipsum. Pellentesque consequat tellus non tortor tempus, id egestas elit iaculis. Proin eu dui porta, pretium metus vitae, pharetra odio. Sed ac mi commodo, pellentesque erat eget, accumsan justo.
-									</p>
-								</div>
-							</div>
-							<div class="accordion_container">
-								<div class="accordion d-flex flex-row align-items-center active">
-									<div>
-										 Proin eu dui porta, pretium metus vitae?
-									</div>
-								</div>
-								<div class="accordion_panel">
-									<p>
-										 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis quam ipsum. Pellentesque consequat tellus non tortor tempus, id egestas elit iaculis. Proin eu dui porta, pretium metus vitae, pharetra odio. Sed ac mi commodo, pellentesque erat eget, accumsan justo.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
+                    <div class="faq_content">
+
+                        <!-- Accordions -->
+                        <div class="accordions">
+
+                            <div class="accordion_container">
+                                <div class="accordion d-flex flex-row align-items-center"><div>Почему гранит лучше других материалов?</div></div>
+                                <div class="accordion_panel" style="max-height: 0px;">
+                                    <p>Гранит – это оптимальное соотношение долговечности и доступной стоимости: камень отличается высокой твердостью, устойчивостью к влаге и различным загрязнениям. Он не требует особенного ухода, при этом служит более 100 лет.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion_container">
+                                <div class="accordion d-flex flex-row align-items-center"><div>Как удалить пятна на граните?</div></div>
+                                <div class="accordion_panel" style="max-height: 0px;">
+                                    <p>Для удаления налета и загрязнений на граните, нужно приобрести специальные очистители для камня. Они помогут удалить пятна, цемент, плесень. Продаются такие препараты в специализированных магазинах.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion_container">
+                                <div class="accordion d-flex flex-row align-items-center active"><div>Как визуально отличить гранит от мрамора?</div></div>
+                                <div class="accordion_panel" style="max-height: 190px;">
+                                    <p>Гранит. Зернистый. Цвет тусклый, четкого изображения на его поверхности даже после очень качественной полировки не проявляется. Камень холодный, мрамор быстрее нагревается.
+                                        Мрамор. Цвет ровный, рисунок волнистый, имеются прожилки, все это напоминает подымающийся над костром дым. Он блестит, в нем все отражается, словно в зеркале;
+                                        Монументы из гранита имеют темный окрас, выглядят величественнее памятников из мрамора.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
 				</div>
 			</div>
 		</div>

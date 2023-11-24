@@ -12,18 +12,17 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 $caunt = 0;
-?>
-<?php if ($arResult["ITEMS"]): ?>
+if ($arResult["ITEMS"]): ?>
 <div class="promo">
     <div class="container">
         <div class="row">
             <div class="col">
                 <div class="section_title_container text-center">
                     <div class="section_subtitle">
-                        только лучшее
+                        <?=GetMessage("TITLE")?>
                     </div>
                     <div class="section_title">
-                        акционные цены
+                        <?=GetMessage("SALE")?>
                     </div>
                 </div>
             </div>
@@ -40,7 +39,6 @@ $caunt = 0;
                         <div class="promo_image">
                             <img src="<?=$arItem['PREVIEW_PICTURE']['SRC']?>" alt="">
                                 <div class="promo_content promo_content_<?=$caunt?>">
-
                                 <div class="promo_title">
                                     <?=$arItem['PROPERTIES']['ADD_DISCOUNT']['VALUE']?>
                                 </div>
@@ -50,7 +48,7 @@ $caunt = 0;
                             </div>
                         </div>
                         <div class="promo_link">
-                            <a href="<?=$arItem['PROPERTIES']['ADD_LINK']['VALUE']?>">Заказать сейчас</a>
+                            <a href="<?=$arItem['PROPERTIES']['ADD_LINK']['VALUE']?>"><?=GetMessage("ORDER")?></a>
                         </div>
                     </div>
                 </div>

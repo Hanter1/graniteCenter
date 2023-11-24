@@ -24,9 +24,21 @@ use Bitrix\Main\Page\Asset;
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/styles/responsive.css');
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/styles/contact_responsive.css');
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/styles/contact.css');
+//    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/styles/cart.css');
+//    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/styles/cart_responsive.css');
+//    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/styles/categories.css');
+//    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/styles/categories_responsive.css');
+//    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/styles/checkout.css');
+//    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/styles/checkout_responsive.css');
+//    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/styles/product.css');
+//    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/styles/product_responsive.css');
 
     //Подключение JS
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/jquery-3.2.1.min.js');
+    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/cart_custom.js');
+    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/categories_custom.js');
+    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/checkout_custom.js');
+    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/product_custom.js');
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/styles/bootstrap4/popper.js');
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/styles/bootstrap4/bootstrap.min.js');
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/plugins/OwlCarousel2-2.2.1/owl.carousel.js');
@@ -137,7 +149,7 @@ use Bitrix\Main\Page\Asset;
     <!-- Home -->
 <?php if ($APPLICATION->GetCurDir() !== '/'): ?>
     <div class="homes">
-        <div class="home_background parallax-window" data-parallax="scroll" data-image-src="/upload/iblock/5fa/r6eq1qy3wfg4hambawzpcwhvd5tnpz8c.jpg" data-speed="0.8"></div>
+        <div class="home_background parallax-window" data-parallax="scroll" data-image-src="<?=SITE_TEMPLATE_PATH?>/images/header/banner.jpg" data-speed="0.8"></div>
         <div class="container">
             <div class="row">
                 <div class="col">

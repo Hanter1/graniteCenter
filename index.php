@@ -2,7 +2,7 @@
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetTitle("Главная");
 ?>
-<!-- Home -->
+<!-- Slider -->
  <?$APPLICATION->IncludeComponent(
 	"bitrix:news.list", 
 	"mainSlider",
@@ -142,7 +142,7 @@ $APPLICATION->SetTitle("Главная");
 	array(
 		"COMPONENT_TEMPLATE" => "mainNewArrivals",
 		"IBLOCK_TYPE" => "catalog",
-		"IBLOCK_ID" => "7",
+		"IBLOCK_ID" => "6",
 		"NEWS_COUNT" => "3",
 		"SORT_BY1" => "ACTIVE_FROM",
 		"SORT_ORDER1" => "DESC",
