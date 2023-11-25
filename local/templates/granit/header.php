@@ -12,6 +12,7 @@ use Bitrix\Main\Page\Asset;
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?$APPLICATION->ShowTitle();?></title>
 
+
     <?
     //Подключение CSS
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/styles/bootstrap4/bootstrap.min.css');
@@ -24,17 +25,9 @@ use Bitrix\Main\Page\Asset;
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/styles/responsive.css');
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/styles/contact_responsive.css');
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/styles/contact.css');
-//    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/styles/cart.css');
-//    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/styles/cart_responsive.css');
-//    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/styles/categories.css');
-//    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/styles/categories_responsive.css');
-//    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/styles/checkout.css');
-//    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/styles/checkout_responsive.css');
-//    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/styles/product.css');
-//    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/styles/product_responsive.css');
 
     //Подключение JS
-    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/jquery-3.2.1.min.js');
+    CJSCore::Init(array("jquery"));
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/cart_custom.js');
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/categories_custom.js');
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/checkout_custom.js');
@@ -50,6 +43,7 @@ use Bitrix\Main\Page\Asset;
 
     //Подключение ссылок
     Asset::getInstance()->addString('<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>');
+    Asset::getInstance()->addString('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">');
     ?>
     <?$APPLICATION->ShowHead();?>
 </head>
