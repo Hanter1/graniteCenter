@@ -9,7 +9,7 @@ $aMenuLinks = Array(
     ),
     Array(
         "Каталог",
-        "/catalog/",
+        "/develop/",
         Array(),
         Array(),
         ""

@@ -42,7 +42,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
                 <nav class="footer_nav">
                     <ul>
                         <li><a href="/about/">О компании</a></li>
-                        <li><a href="/catalog/">каталог</a></li>
+                        <li><a href="/develop/">каталог</a></li>
                         <li><a href="/gallery/">галерея</a></li>
                         <li><a href="/contacts/">контакты</a></li>
                     </ul>
