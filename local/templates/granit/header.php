@@ -8,7 +8,8 @@ use Bitrix\Main\Page\Asset;
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Wish shop project">
+    <meta name="description" content="Памятники в Гродно. Заказать памятник от производителя. Столешницы, подоконники и памятники из гранита. Гранитцентр.">
+    <meta name="keywords" content="гранит продажа производство предприятие granitcenter гранитцентр Гродно оптом розницу">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?$APPLICATION->ShowTitle();?></title>
 

@@ -1,540 +1,171 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Каталог");
-?>
-    <div class="home">
-        <div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/categories.jpg" data-speed="0.8"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="home_container">
-                        <div class="home_content">
-                            <div class="home_title">Woman</div>
-                            <div class="breadcrumbs">
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li>Woman</li>
-                                    <li>Accessories</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Products -->
-
-    <div class="products">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-
-                    <!-- Sidebar Left -->
-
-                    <div class="sidebar_left clearfix">
-
-                        <!-- Categories -->
-                        <div class="sidebar_section">
-                            <div class="sidebar_title">Categories</div>
-                            <div class="sidebar_section_content">
-                                <ul>
-                                    <li><a href="#">Wedding Dresses (23)</a></li>
-                                    <li><a href="#">Swimsuits (11)</a></li>
-                                    <li><a href="#">Jeans (61)</a></li>
-                                    <li><a href="#">Tops (34)</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Color -->
-                        <div class="sidebar_section">
-                            <div class="sidebar_title">Color</div>
-                            <div class="sidebar_section_content sidebar_color_content mCustomScrollbar" data-mcs-theme="minimal-dark">
-                                <ul>
-                                    <li><a href="#"><span style="background:#a3ccff"></span>Blue (23)</a></li>
-                                    <li><a href="#"><span style="background:#937c6f"></span>Brown (11)</a></li>
-                                    <li><a href="#"><span style="background:#000000"></span>Black (61)</a></li>
-                                    <li><a href="#"><span style="background:#ff5c00"></span>Orange (34)</a></li>
-                                    <li><a href="#"><span style="background:#a3ffb2"></span>Green (17)</a></li>
-                                    <li><a href="#"><span style="background:#f52832"></span>Red (22)</a></li>
-                                    <li><a href="#"><span style="background:#fdabf4"></span>Pink (7)</a></li>
-                                    <li><a href="#"><span style="background:#ecf863"></span>Yellow (13)</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Size -->
-                        <div class="sidebar_section">
-                            <div class="sidebar_title">Size</div>
-                            <div class="sidebar_section_content">
-                                <ul>
-                                    <li><a href="#">Small S (23)</a></li>
-                                    <li><a href="#">Medium M (11)</a></li>
-                                    <li><a href="#">Large L (61)</a></li>
-                                    <li><a href="#">Extra Large XL (34)</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Price -->
-                        <div class="sidebar_section">
-                            <div class="sidebar_title">Price</div>
-                            <div class="sidebar_section_content">
-                                <div class="filter_price">
-                                    <div id="slider-range" class="slider_range"></div>
-                                    <p><input type="text" id="amount" class="amount" readonly style="border:0; font-weight:bold;"></p>
-                                    <div class="clear_price_btn">Clear Price</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Best Sellers -->
-
-                        <div class="sidebar_section">
-                            <div class="sidebar_title">Best Sellers</div>
-                            <div class="sidebar_section_content bestsellers_content">
-                                <ul>
-                                    <!-- Best Seller Item -->
-                                    <li class="clearfix">
-                                        <div class="best_image"><img src="images/best_1.jpg" alt=""></div>
-                                        <div class="best_content">
-                                            <div class="best_title"><a href="product.html">Blue dress with dots</a></div>
-                                            <div class="best_price">$45</div>
-                                        </div>
-                                        <div class="best_buy">+</div>
-                                    </li>
-
-                                    <!-- Best Seller Item -->
-                                    <li class="clearfix">
-                                        <div class="best_image"><img src="images/best_2.jpg" alt=""></div>
-                                        <div class="best_content">
-                                            <div class="best_title"><a href="product.html">White t-shirt</a></div>
-                                            <div class="best_price">$45</div>
-                                        </div>
-                                        <div class="best_buy">+</div>
-                                    </li>
-
-                                    <!-- Best Seller Item -->
-                                    <li class="clearfix">
-                                        <div class="best_image"><img src="images/best_3.jpg" alt=""></div>
-                                        <div class="best_content">
-                                            <div class="best_title"><a href="product.html">Blue dress with dots</a></div>
-                                            <div class="best_price">$45</div>
-                                        </div>
-                                        <div class="best_buy">+</div>
-                                    </li>
-
-                                    <!-- Best Seller Item -->
-                                    <li class="clearfix">
-                                        <div class="best_image"><img src="images/best_4.jpg" alt=""></div>
-                                        <div class="best_content">
-                                            <div class="best_title"><a href="product.html">White t-shirt</a></div>
-                                            <div class="best_price">$45</div>
-                                        </div>
-                                        <div class="best_buy">+</div>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Size -->
-                        <div class="sidebar_section sidebar_options">
-                            <div class="sidebar_section_content">
-
-                                <!-- Option Item -->
-                                <div class="sidebar_option d-flex flex-row align-items-center justify-content-start">
-                                    <div class="option_image"><img src="images/option_1.png" alt=""></div>
-                                    <div class="option_content">
-                                        <div class="option_title">30 Days Returns</div>
-                                        <div class="option_subtitle">No questions asked</div>
-                                    </div>
-                                </div>
-
-                                <!-- Option Item -->
-                                <div class="sidebar_option d-flex flex-row align-items-center justify-content-start">
-                                    <div class="option_image"><img src="images/option_2.png" alt=""></div>
-                                    <div class="option_content">
-                                        <div class="option_title">Free Delivery</div>
-                                        <div class="option_subtitle">On all orders</div>
-                                    </div>
-                                </div>
-
-                                <!-- Option Item -->
-                                <div class="sidebar_option d-flex flex-row align-items-center justify-content-start">
-                                    <div class="option_image"><img src="images/option_3.png" alt=""></div>
-                                    <div class="option_content">
-                                        <div class="option_title">Secure Payments</div>
-                                        <div class="option_subtitle">No need to worry</div>
-                                    </div>
-                                </div>
-
-                                <!-- Option Item -->
-                                <div class="sidebar_option d-flex flex-row align-items-center justify-content-start">
-                                    <div class="option_image"><img src="images/option_4.png" alt=""></div>
-                                    <div class="option_content">
-                                        <div class="option_title">24/7 Support</div>
-                                        <div class="option_subtitle">Just call us</div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="current_page">Woman's Fashion</div>
-                </div>
-                <div class="col-12">
-                    <div class="product_sorting clearfix">
-                        <div class="view">
-                            <div class="view_box box_view"><i class="fa fa-th-large" aria-hidden="true"></i></div>
-                            <div class="view_box detail_view"><i class="fa fa-bars" aria-hidden="true"></i></div>
-                        </div>
-                        <div class="sorting">
-                            <ul class="item_sorting">
-                                <li>
-                                    <span class="sorting_text">Show all</span>
-                                    <i class="fa fa-caret-down" aria-hidden="true"></i>
-                                    <ul>
-                                        <li class="product_sorting_btn" data-isotope-option='{ "sortBy": "original-order" }'><span>Show All</span></li>
-                                        <li class="product_sorting_btn" data-isotope-option='{ "sortBy": "price" }'><span>Price</span></li>
-                                        <li class="product_sorting_btn" data-isotope-option='{ "sortBy": "stars" }'><span>Stars</span></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <span class="sorting_text">Show</span>
-                                    <span class="num_sorting_text">12</span>
-                                    <i class="fa fa-caret-down" aria-hidden="true"></i>
-                                    <ul>
-                                        <li class="num_sorting_btn"><span>3</span></li>
-                                        <li class="num_sorting_btn"><span>6</span></li>
-                                        <li class="num_sorting_btn"><span>12</span></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row products_container">
-                <div class="col">
-
-                    <!-- Products -->
-
-                    <div class="product_grid">
-
-                        <!-- Product -->
-                        <div class="product">
-                            <div class="product_image"><img src="images/product_1.jpg" alt=""></div>
-                            <div class="rating rating_4" data-rating="4">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product_content clearfix">
-                                <div class="product_info">
-                                    <div class="product_name"><a href="product.html">Woman's Long Dress</a></div>
-                                    <div class="product_price">$45.00</div>
-                                </div>
-                                <div class="product_options">
-                                    <div class="product_buy product_option"><img src="images/shopping-bag-white.svg" alt=""></div>
-                                    <div class="product_fav product_option">+</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product -->
-                        <div class="product">
-                            <div class="product_image"><img src="images/product_2.jpg" alt=""></div>
-                            <div class="rating rating_5" data-rating="5">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product_content clearfix">
-                                <div class="product_info">
-                                    <div class="product_name"><a href="product.html">2 Piece Swimsuit</a></div>
-                                    <div class="product_price">$35.00</div>
-                                </div>
-                                <div class="product_options">
-                                    <div class="product_buy product_option"><img src="images/shopping-bag-white.svg" alt=""></div>
-                                    <div class="product_fav product_option">+</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product -->
-                        <div class="product">
-                            <div class="product_image"><img src="images/product_3.jpg" alt=""></div>
-                            <div class="rating rating_3" data-rating="3">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product_content clearfix">
-                                <div class="product_info">
-                                    <div class="product_name"><a href="product.html">Man Blue Jacket</a></div>
-                                    <div class="product_price">$145.00</div>
-                                </div>
-                                <div class="product_options">
-                                    <div class="product_buy product_option"><img src="images/shopping-bag-white.svg" alt=""></div>
-                                    <div class="product_fav product_option">+</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product -->
-                        <div class="product">
-                            <div class="product_image"><img src="images/product_4.jpg" alt=""></div>
-                            <div class="rating rating_3" data-rating="3">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product_content clearfix">
-                                <div class="product_info">
-                                    <div class="product_name"><a href="product.html">Man Blue Jacket</a></div>
-                                    <div class="product_price">$145.00</div>
-                                </div>
-                                <div class="product_options">
-                                    <div class="product_buy product_option"><img src="images/shopping-bag-white.svg" alt=""></div>
-                                    <div class="product_fav product_option">+</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product -->
-                        <div class="product">
-                            <div class="product_image"><img src="images/product_5.jpg" alt=""></div>
-                            <div class="rating rating_3" data-rating="3">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product_content clearfix">
-                                <div class="product_info">
-                                    <div class="product_name"><a href="product.html">Man Blue Jacket</a></div>
-                                    <div class="product_price">$145.00</div>
-                                </div>
-                                <div class="product_options">
-                                    <div class="product_buy product_option"><img src="images/shopping-bag-white.svg" alt=""></div>
-                                    <div class="product_fav product_option">+</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product -->
-                        <div class="product">
-                            <div class="product_image"><img src="images/product_6.jpg" alt=""></div>
-                            <div class="rating rating_3" data-rating="3">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product_content clearfix">
-                                <div class="product_info">
-                                    <div class="product_name"><a href="product.html">Man Blue Jacket</a></div>
-                                    <div class="product_price">$145.00</div>
-                                </div>
-                                <div class="product_options">
-                                    <div class="product_buy product_option"><img src="images/shopping-bag-white.svg" alt=""></div>
-                                    <div class="product_fav product_option">+</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product -->
-                        <div class="product">
-                            <div class="product_image"><img src="images/product_7.jpg" alt=""></div>
-                            <div class="rating rating_3" data-rating="3">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product_content clearfix">
-                                <div class="product_info">
-                                    <div class="product_name"><a href="product.html">Man Blue Jacket</a></div>
-                                    <div class="product_price">$145.00</div>
-                                </div>
-                                <div class="product_options">
-                                    <div class="product_buy product_option"><img src="images/shopping-bag-white.svg" alt=""></div>
-                                    <div class="product_fav product_option">+</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product -->
-                        <div class="product">
-                            <div class="product_image"><img src="images/product_8.jpg" alt=""></div>
-                            <div class="rating rating_3" data-rating="3">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product_content clearfix">
-                                <div class="product_info">
-                                    <div class="product_name"><a href="product.html">Man Blue Jacket</a></div>
-                                    <div class="product_price">$145.00</div>
-                                </div>
-                                <div class="product_options">
-                                    <div class="product_buy product_option"><img src="images/shopping-bag-white.svg" alt=""></div>
-                                    <div class="product_fav product_option">+</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product -->
-                        <div class="product">
-                            <div class="product_image"><img src="images/product_9.jpg" alt=""></div>
-                            <div class="rating rating_3" data-rating="3">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product_content clearfix">
-                                <div class="product_info">
-                                    <div class="product_name"><a href="product.html">Man Blue Jacket</a></div>
-                                    <div class="product_price">$145.00</div>
-                                </div>
-                                <div class="product_options">
-                                    <div class="product_buy product_option"><img src="images/shopping-bag-white.svg" alt=""></div>
-                                    <div class="product_fav product_option">+</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product -->
-                        <div class="product">
-                            <div class="product_image"><img src="images/product_10.jpg" alt=""></div>
-                            <div class="rating rating_3" data-rating="3">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product_content clearfix">
-                                <div class="product_info">
-                                    <div class="product_name"><a href="product.html">Man Blue Jacket</a></div>
-                                    <div class="product_price">$145.00</div>
-                                </div>
-                                <div class="product_options">
-                                    <div class="product_buy product_option"><img src="images/shopping-bag-white.svg" alt=""></div>
-                                    <div class="product_fav product_option">+</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product -->
-                        <div class="product">
-                            <div class="product_image"><img src="images/product_11.jpg" alt=""></div>
-                            <div class="rating rating_3" data-rating="3">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product_content clearfix">
-                                <div class="product_info">
-                                    <div class="product_name"><a href="product.html">Man Blue Jacket</a></div>
-                                    <div class="product_price">$145.00</div>
-                                </div>
-                                <div class="product_options">
-                                    <div class="product_buy product_option"><img src="images/shopping-bag-white.svg" alt=""></div>
-                                    <div class="product_fav product_option">+</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product -->
-                        <div class="product">
-                            <div class="product_image"><img src="images/product_12.jpg" alt=""></div>
-                            <div class="rating rating_3" data-rating="3">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product_content clearfix">
-                                <div class="product_info">
-                                    <div class="product_name"><a href="product.html">Man Blue Jacket</a></div>
-                                    <div class="product_price">$145.00</div>
-                                </div>
-                                <div class="product_options">
-                                    <div class="product_buy product_option"><img src="images/shopping-bag-white.svg" alt=""></div>
-                                    <div class="product_fav product_option">+</div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row page_num_container">
-                <div class="col text-right">
-                    <ul class="page_nums">
-                        <li><a href="#">01</a></li>
-                        <li class="active"><a href="#">02</a></li>
-                        <li><a href="#">03</a></li>
-                        <li><a href="#">04</a></li>
-                        <li><a href="#">05</a></li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Sidebar Right -->
-
-        <div class="sidebar_right clearfix">
-
-            <!-- Promo 1 -->
-            <div class="sidebar_promo_1 sidebar_promo d-flex flex-column align-items-center justify-content-center">
-                <div class="sidebar_promo_image" style="background-image: url(images/sidebar_promo_1.jpg)"></div>
-                <div class="sidebar_promo_content text-center">
-                    <div class="sidebar_promo_title">30%<span>off</span></div>
-                    <div class="sidebar_promo_subtitle">On all shoes</div>
-                    <div class="sidebar_promo_button"><a href="checkout.html">check out</a></div>
-                </div>
-            </div>
-
-            <!-- Promo 2 -->
-            <div class="sidebar_promo_2 sidebar_promo">
-                <div class="sidebar_promo_image" style="background-image: url(images/sidebar_promo_2.jpg)"></div>
-                <div class="sidebar_promo_content text-center">
-                    <div class="sidebar_promo_title">30%<span>off</span></div>
-                    <div class="sidebar_promo_subtitle">On all shoes</div>
-                    <div class="sidebar_promo_button"><a href="checkout.html">check out</a></div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+?><?$APPLICATION->IncludeComponent("bitrix:catalog", "catalog", Array(
+	"ACTION_VARIABLE" => "action",	// Название переменной, в которой передается действие
+		"ADD_ELEMENT_CHAIN" => "N",	// Включать название элемента в цепочку навигации
+		"ADD_PICT_PROP" => "-",	// Дополнительная картинка основного товара
+		"ADD_PROPERTIES_TO_BASKET" => "Y",	// Добавлять в корзину свойства товаров и предложений
+		"ADD_SECTIONS_CHAIN" => "Y",	// Включать раздел в цепочку навигации
+		"AJAX_MODE" => "N",	// Включить режим AJAX
+		"AJAX_OPTION_ADDITIONAL" => "",	// Дополнительный идентификатор
+		"AJAX_OPTION_HISTORY" => "N",	// Включить эмуляцию навигации браузера
+		"AJAX_OPTION_JUMP" => "N",	// Включить прокрутку к началу компонента
+		"AJAX_OPTION_STYLE" => "Y",	// Включить подгрузку стилей
+		"BASKET_URL" => "/personal/basket.php",	// URL, ведущий на страницу с корзиной покупателя
+		"CACHE_FILTER" => "N",	// Кешировать при установленном фильтре
+		"CACHE_GROUPS" => "Y",	// Учитывать права доступа
+		"CACHE_TIME" => "36000000",	// Время кеширования (сек.)
+		"CACHE_TYPE" => "A",	// Тип кеширования
+		"COMPATIBLE_MODE" => "N",	// Включить режим совместимости
+		"DETAIL_ADD_DETAIL_TO_SLIDER" => "N",	// Добавлять детальную картинку в слайдер
+		"DETAIL_BACKGROUND_IMAGE" => "-",	// Установить фоновую картинку для шаблона из свойства
+		"DETAIL_BRAND_USE" => "N",	// Использовать компонент "Бренды"
+		"DETAIL_BROWSER_TITLE" => "-",	// Установить заголовок окна браузера из свойства
+		"DETAIL_CHECK_SECTION_ID_VARIABLE" => "N",	// Использовать код группы из переменной, если не задан раздел элемента
+		"DETAIL_DETAIL_PICTURE_MODE" => array(	// Режим показа детальной картинки
+			0 => "POPUP",
+			1 => "MAGNIFIER",
+		),
+		"DETAIL_DISPLAY_NAME" => "Y",	// Выводить название элемента
+		"DETAIL_DISPLAY_PREVIEW_TEXT_MODE" => "E",	// Показ описания для анонса на детальной странице
+		"DETAIL_IMAGE_RESOLUTION" => "16by9",	// Соотношение сторон изображения товара
+		"DETAIL_META_DESCRIPTION" => "-",	// Установить описание страницы из свойства
+		"DETAIL_META_KEYWORDS" => "-",	// Установить ключевые слова страницы из свойства
+		"DETAIL_PRODUCT_INFO_BLOCK_ORDER" => "sku,props",	// Порядок отображения блоков информации о товаре
+		"DETAIL_PRODUCT_PAY_BLOCK_ORDER" => "rating,price,priceRanges,quantityLimit,quantity,buttons",	// Порядок отображения блоков покупки товара
+		"DETAIL_SET_CANONICAL_URL" => "N",	// Устанавливать канонический URL
+		"DETAIL_SHOW_POPULAR" => "Y",	// Показывать блок "Популярное в разделе"
+		"DETAIL_SHOW_SLIDER" => "N",	// Показывать слайдер для товаров
+		"DETAIL_SHOW_VIEWED" => "Y",	// Показывать блок "Просматривали"
+		"DETAIL_STRICT_SECTION_CHECK" => "N",	// Строгая проверка раздела для детального показа элемента
+		"DETAIL_USE_COMMENTS" => "N",	// Включить отзывы о товаре
+		"DETAIL_USE_VOTE_RATING" => "N",	// Включить рейтинг товара
+		"DISABLE_INIT_JS_IN_COMPONENT" => "N",	// Не подключать js-библиотеки в компоненте
+		"DISPLAY_BOTTOM_PAGER" => "Y",	// Выводить под списком
+		"DISPLAY_TOP_PAGER" => "N",	// Выводить над списком
+		"ELEMENT_SORT_FIELD" => "sort",	// По какому полю сортируем товары в разделе
+		"ELEMENT_SORT_FIELD2" => "id",	// Поле для второй сортировки товаров в разделе
+		"ELEMENT_SORT_ORDER" => "asc",	// Порядок сортировки товаров в разделе
+		"ELEMENT_SORT_ORDER2" => "desc",	// Порядок второй сортировки товаров в разделе
+		"FILTER_HIDE_ON_MOBILE" => "N",	// Скрывать умный фильтр на мобильных устройствах
+		"FILTER_VIEW_MODE" => "VERTICAL",	// Вид отображения умного фильтра
+		"IBLOCK_ID" => "7",	// Инфоблок
+		"IBLOCK_TYPE" => "catalog",	// Тип инфоблока
+		"INCLUDE_SUBSECTIONS" => "Y",	// Показывать элементы подразделов раздела
+		"INSTANT_RELOAD" => "N",	// Мгновенная фильтрация при включенном AJAX
+		"LABEL_PROP" => "",	// Свойство меток товара
+		"LAZY_LOAD" => "N",	// Показать кнопку ленивой загрузки Lazy Load
+		"LINE_ELEMENT_COUNT" => "3",	// Количество элементов, выводимых в одной строке таблицы
+		"LINK_ELEMENTS_URL" => "link.php?PARENT_ELEMENT_ID=#ELEMENT_ID#",	// URL на страницу, где будет показан список связанных элементов
+		"LINK_IBLOCK_ID" => "",	// ID инфоблока, элементы которого связаны с текущим элементом
+		"LINK_IBLOCK_TYPE" => "",	// Тип инфоблока, элементы которого связаны с текущим элементом
+		"LINK_PROPERTY_SID" => "",	// Свойство, в котором хранится связь
+		"LIST_BROWSER_TITLE" => "-",	// Установить заголовок окна браузера из свойства раздела
+		"LIST_ENLARGE_PRODUCT" => "STRICT",	// Выделять товары в списке
+		"LIST_META_DESCRIPTION" => "-",	// Установить описание страницы из свойства раздела
+		"LIST_META_KEYWORDS" => "-",	// Установить ключевые слова страницы из свойства раздела
+		"LIST_PRODUCT_BLOCKS_ORDER" => "price,props,sku,quantityLimit,quantity,buttons",	// Порядок отображения блоков товара
+		"LIST_PRODUCT_ROW_VARIANTS" => "[{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false}]",	// Вариант отображения товаров
+		"LIST_SHOW_SLIDER" => "Y",	// Показывать слайдер для товаров
+		"LIST_SLIDER_INTERVAL" => "3000",	// Интервал смены слайдов, мс
+		"LIST_SLIDER_PROGRESS" => "N",	// Показывать полосу прогресса
+		"LOAD_ON_SCROLL" => "N",	// Подгружать товары при прокрутке до конца
+		"MESSAGE_404" => "",	// Сообщение для показа (по умолчанию из компонента)
+		"MESS_BTN_ADD_TO_BASKET" => "В корзину",	// Текст кнопки "Добавить в корзину"
+		"MESS_BTN_BUY" => "Купить",	// Текст кнопки "Купить"
+		"MESS_BTN_COMPARE" => "Сравнение",	// Текст кнопки "Сравнение"
+		"MESS_BTN_DETAIL" => "Подробнее",	// Текст кнопки "Подробнее"
+		"MESS_BTN_LAZY_LOAD" => "Показать ещё",	// Текст кнопки "Показать ещё"
+		"MESS_BTN_SUBSCRIBE" => "Подписаться",	// Текст кнопки "Уведомить о поступлении"
+		"MESS_NOT_AVAILABLE" => "Нет в наличии",	// Сообщение об отсутствии товара
+		"MESS_NOT_AVAILABLE_SERVICE" => "Недоступно",	// Сообщение о недоступности услуги
+		"PAGER_BASE_LINK_ENABLE" => "N",	// Включить обработку ссылок
+		"PAGER_DESC_NUMBERING" => "N",	// Использовать обратную навигацию
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",	// Время кеширования страниц для обратной навигации
+		"PAGER_SHOW_ALL" => "N",	// Показывать ссылку "Все"
+		"PAGER_SHOW_ALWAYS" => "N",	// Выводить всегда
+		"PAGER_TEMPLATE" => ".default",	// Шаблон постраничной навигации
+		"PAGER_TITLE" => "Товары",	// Название категорий
+		"PAGE_ELEMENT_COUNT" => "30",	// Количество элементов на странице
+		"PARTIAL_PRODUCT_PROPERTIES" => "N",	// Разрешить добавлять в корзину товары, у которых заполнены не все характеристики
+		"PRICE_CODE" => "",	// Тип цены
+		"PRICE_VAT_INCLUDE" => "Y",	// Включать НДС в цену
+		"PRICE_VAT_SHOW_VALUE" => "N",	// Отображать значение НДС
+		"PRODUCT_ID_VARIABLE" => "id",	// Название переменной, в которой передается код товара для покупки
+		"PRODUCT_PROPS_VARIABLE" => "prop",	// Название переменной, в которой передаются характеристики товара
+		"PRODUCT_QUANTITY_VARIABLE" => "quantity",	// Название переменной, в которой передается количество товара
+		"SEARCH_CHECK_DATES" => "Y",	// Искать только в активных по дате документах
+		"SEARCH_NO_WORD_LOGIC" => "Y",	// Отключить обработку слов как логических операторов
+		"SEARCH_PAGE_RESULT_COUNT" => "50",	// Максимальное число результатов
+		"SEARCH_RESTART" => "N",	// Искать без учета морфологии (при отсутствии результата поиска)
+		"SEARCH_USE_LANGUAGE_GUESS" => "Y",	// Включить автоопределение раскладки клавиатуры
+		"SEARCH_USE_SEARCH_RESULT_ORDER" => "N",	// Использовать сортировку результатов по релевантности
+		"SECTIONS_SHOW_PARENT_NAME" => "Y",	// Показывать название раздела
+		"SECTIONS_VIEW_MODE" => "LIST",	// Вид списка подразделов
+		"SECTION_BACKGROUND_IMAGE" => "-",	// Установить фоновую картинку для шаблона из свойства
+		"SECTION_COUNT_ELEMENTS" => "Y",	// Показывать количество элементов в разделе
+		"SECTION_ID_VARIABLE" => "SECTION_ID",	// Название переменной, в которой передается код группы
+		"SECTION_TOP_DEPTH" => "2",	// Максимальная отображаемая глубина разделов
+		"SEF_MODE" => "N",	// Включить поддержку ЧПУ
+		"SET_LAST_MODIFIED" => "N",	// Устанавливать в заголовках ответа время модификации страницы
+		"SET_STATUS_404" => "N",	// Устанавливать статус 404
+		"SET_TITLE" => "Y",	// Устанавливать заголовок страницы
+		"SHOW_404" => "N",	// Показ специальной страницы
+		"SHOW_DEACTIVATED" => "N",	// Показывать деактивированные товары
+		"SHOW_PRICE_COUNT" => "1",	// Выводить цены для количества
+		"SHOW_SKU_DESCRIPTION" => "N",	// Отображать описание для каждого торгового предложения
+		"SHOW_TOP_ELEMENTS" => "Y",	// Выводить топ элементов
+		"SIDEBAR_DETAIL_SHOW" => "N",	// Показывать правый блок на детальной странице
+		"SIDEBAR_PATH" => "",	// Путь к включаемой области для вывода информации в правом блоке
+		"SIDEBAR_SECTION_SHOW" => "Y",	// Показывать правый блок в списке товаров
+		"TEMPLATE_THEME" => "blue",	// Цветовая тема
+		"TOP_ELEMENT_COUNT" => "9",	// Количество выводимых элементов
+		"TOP_ELEMENT_SORT_FIELD" => "sort",	// По какому полю сортируем товары в разделе
+		"TOP_ELEMENT_SORT_FIELD2" => "id",	// Поле для второй сортировки товаров в разделе
+		"TOP_ELEMENT_SORT_ORDER" => "asc",	// Порядок сортировки товаров в разделе
+		"TOP_ELEMENT_SORT_ORDER2" => "desc",	// Порядок второй сортировки товаров в разделе
+		"TOP_ENLARGE_PRODUCT" => "STRICT",	// Выделять товары в списке
+		"TOP_LINE_ELEMENT_COUNT" => "3",	// Количество элементов, выводимых в одной строке таблицы
+		"TOP_PRODUCT_BLOCKS_ORDER" => "price,props,sku,quantityLimit,quantity,buttons",	// Порядок отображения блоков товара
+		"TOP_PRODUCT_ROW_VARIANTS" => "[{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false}]",	// Вариант отображения товаров
+		"TOP_SHOW_SLIDER" => "Y",	// Показывать слайдер для товаров
+		"TOP_SLIDER_INTERVAL" => "3000",	// Интервал смены слайдов, мс
+		"TOP_SLIDER_PROGRESS" => "N",	// Показывать полосу прогресса
+		"TOP_VIEW_MODE" => "SECTION",	// Показ элементов top'а
+		"USER_CONSENT" => "N",	// Запрашивать согласие
+		"USER_CONSENT_ID" => "0",	// Соглашение
+		"USER_CONSENT_IS_CHECKED" => "Y",	// Галка по умолчанию проставлена
+		"USER_CONSENT_IS_LOADED" => "N",	// Загружать текст сразу
+		"USE_COMPARE" => "N",	// Разрешить сравнение товаров
+		"USE_ELEMENT_COUNTER" => "Y",	// Использовать счетчик просмотров
+		"USE_ENHANCED_ECOMMERCE" => "N",	// Включить отправку данных в электронную торговлю
+		"USE_FILTER" => "N",	// Показывать фильтр
+		"USE_MAIN_ELEMENT_SECTION" => "N",	// Использовать основной раздел для показа элемента
+		"USE_PRICE_COUNT" => "N",	// Использовать вывод цен с диапазонами
+		"USE_PRODUCT_QUANTITY" => "N",	// Разрешить указание количества товара
+		"USE_STORE" => "N",	// Показывать блок "Количество товара на складе"
+		"VARIABLE_ALIASES" => array(
+			"ELEMENT_ID" => "ELEMENT_ID",
+			"SECTION_ID" => "SECTION_ID",
+		)
+	),
+	false
+);?>
+<div class="home">
+	<div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/categories.jpg" data-speed="0.8">
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="home_container">
+					<div class="home_content">
+						<div class="home_title">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+ <br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
