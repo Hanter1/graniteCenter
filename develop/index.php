@@ -35,7 +35,7 @@
                     <p class="comming-soon-01__desc">Прямо сейчас мы усердно трудимся над созданием данного раздела, поэтому вы читаете этот текст. Не переживайте, мы скоро закончим.</p>
 
                     <!-- countdown__module hide undefined -->
-                    <div class="countdown__module hide undefined" data-date="2023/11/30">
+                    <div class="countdown__module hide undefined" data-date="2023/12/10">
                         <p><span>%D</span> Days</p>
                         <p><span>%H</span> Hours</p>
                         <p><span>%M</span> Minutes</p>
